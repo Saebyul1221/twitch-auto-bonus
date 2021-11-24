@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "twitch auto bonus",
+  "version": "1.0.0",
+  "description": "It automatically clicks on the Twitch Bonus box.",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.twitch.tv/*"],
+      "js": ["index.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
